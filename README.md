@@ -1,0 +1,1 @@
+# automation-test-submodule-go
