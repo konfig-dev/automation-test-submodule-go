@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  description: SDKs (no submodules) to test automation workflows.
+  title: Test Automation (No submodules)
+  version: 1.0.0
+servers:
+- description: localhost
+  url: http://google.com
+tags:
+- description: Say hello!
+  name: Greetings
+paths:
+  /hello:
+    get:
+      operationId: Greetings_hello
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HelloResponse'
+          description: Successful response
+      summary: Get a simple greeting!!!
+      tags:
+      - Greetings
+      x-konfig-operation-can-have-single-parameter: true
+      x-konfig-single-parameter-schema: konfig-generated-schema-single-parameter-schema-get--hello
+components:
+  schemas:
+    HelloResponse:
+      example:
+        message: message
+      properties:
+        message:
+          description: The greeting message
+          type: string
+      required:
+      - message
+      type: object
+    konfig-generated-schema-single-parameter-schema-get--hello:
+      properties: {}
+      type: object
+      x-do-not-generate: true
+      x-konfig-is-parameter: []
+  securitySchemes:
+    api_key:
+      in: header
+      name: superSecretKey
+      type: apiKey
+      x-konfig-globally-required-security: false

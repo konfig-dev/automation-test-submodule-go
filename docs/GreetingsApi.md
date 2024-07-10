@@ -1,19 +1,20 @@
-# automationtestwithsubmodules - 's Go SDK
+# APIClient.GreetingsApi
 
-SDKs (no submodules) to test automation workflows.
+All URIs are relative to *http://google.com*
+
+Method | Path | Description
+------------- | ------------- | -------------
+[**Hello**](GreetingsApi.md#Hello) | **Get** /hello | Get a simple greeting!!!
 
 
-## Installation
 
-Add to your project:
+## Hello
 
-```shell
-go get github.com/konfig-dev/automation-test-submodule-go
-```
+Get a simple greeting!!!
 
-## Getting Started
+### Example
 
-```golang
+```go
 package main
 
 import (
@@ -41,15 +42,7 @@ func main() {
 }
 ```
 
-## Documentation for API Endpoints
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-All URIs are relative to *http://google.com*
-
-Class | Method | HTTP request | Description
------------- | ------------- | ------------- | -------------
-*GreetingsApi* | [**Hello**](docs/GreetingsApi.md#hello) | **Get** /hello | Get a simple greeting!!!
-
-
-## Documentation For Models
-
- - [HelloResponse](docs/HelloResponse.md)
