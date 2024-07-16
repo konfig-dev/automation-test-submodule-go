@@ -7,7 +7,7 @@ servers:
 - description: localhost
   url: http://google.com
 tags:
-- description: Say hello!!
+- description: Say hello!
   name: Greetings
 paths:
   /hello:
